@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irvin's Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <section id="header">
+        <nav class="navbar">
+            <div>
+                <a href="#">
+                <img class="primary-icon" src="/images/search.png" alt="LOGO"> 
+                </a>
+            </div>
+            <ul class="nav-list" id="navi-list">
+                <li class="list-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="#wrapper">Skills</a>
+                </li>
+                <li class="list-item">
+                    <a href="#contact">Contacts</a>
+                </li>
+            </ul>
+            <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                
+            </div>
+        </nav>
+        
+    </section>
+
+
+    <!--Main Section-->
+    <section class="main">
+        <div>
+            <div>
+                <div>
+                    <h1>Welcome to my portfolio!</h1>
+                    <h2>About Me</h2>
+                    <p>
+                        Hello everyone, my name is Irvin Ortega and I am a sophmore attending Georgia Student. This is my showcase of my porfolio using HTML, CSS and Javascript.
+                        <br>
+                        I'm an ambitious student who is passionate about teamwork, hardwork, leadership and technology, while at the same time trying to give back to his community.
+                    </p>
+                    <button class="main-button"><a href="Resume.pdf"  target="_blank" rel="noopener" rel="noreferrer" class="readMore">Resume</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Skills about me-->
+    <section>
+        <div id="wrapper">
+            <div class="top_div">
+                <h1>My Skills</h1>
+                <hr>
+            </div><!--End of top div-->
+            <div class="content">
+                <img src="/images/html-5.png" alt="">
+                <h2>Html</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sed sequi officiis exercitationem harum dicta dolores iusto nemo vel porro earum, error veniam alias omnis!</p>
+            </div>
+
+
+            <div class="content">
+                <img src="/images/css-3.png" alt="">
+                <h2>Css</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sed sequi officiis exercitationem harum dicta dolores iusto nemo vel porro earum, error veniam alias omnis!</p>
+            </div>
+
+            <div class="content">
+                <img src="/images/js.png" alt="">
+                <h2>Javascript</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sed sequi officiis exercitationem harum dicta dolores iusto nemo vel porro earum, error veniam alias omnis!</p>
+            </div>
+
+            <div class="content">
+                <img src="/images/python.png" alt="">
+                <h2>Python</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sed sequi officiis exercitationem harum dicta dolores iusto nemo vel porro earum, error veniam alias omnis!</p>
+            </div>
+    
+        </div><!--End of Wrapper-->
+
+    </section>
+
+    <!--Socials, I used the template to help for this one. -->
+    <section>
+        
+        <div id="contact">
+                <div class="container">
+                <h1>Contacts</h1>
+
+                <div id="mini-nav">
+                    <a href="#header">Home</a>
+                    <a href="#wrapper">My Skills</a>
+                    <a href="#contact">Contacts</a>
+                </div>
+                <!--Font awesome icon with link socials..-->
+                <div id="social-handles">
+
+                    <a href="https://github.com/Ipelcaztreortega" target="_blank" rel="noopener" rel="noreferrer">
+                        <img class="primary-icon" src="/images/github.png" alt="Github icon"> 
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/irvin-pelcaztre-ortega-10947720a/" target="_blank" rel="noopener" rel="noreferrer">
+                        <img class="primary-icon" src="/images/linkedin.png" alt="Linkedin"> 
+                    </a>
+                    
+                </div>
+                </div>
+            </div>
+
+    </section>
+    
+</body>
+<script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList =  document.getElementById("navi-list");
+
+    toggleButton.addEventListener("click", () =>{ /*This basically activates the active class when you click on it.*/
+        naviList.classList.toggle("active");
+    })
+</script>
+</html>
